@@ -1,0 +1,13 @@
+.projects {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; // clearfix
+
+    .project {
+        img {
+            float: left;
+            margin-right: 20px;
+        }
+    }
+}

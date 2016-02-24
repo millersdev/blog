@@ -1,0 +1,20 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Reinier van der Windt
+tagline:             Angular &amp; Python Developer
+description:         Angular &amp; Python Developer from the Netherlands
+paginate:            5
+baseurl:             ""
+
+# Assets
+sass:
+  style:            :compressed
+
+# Build settings
+markdown: kramdown
+
+# Gems
+gems:
+  - jekyll-paginate

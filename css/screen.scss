@@ -1,0 +1,61 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
+
+//
+//                        ___
+//                       /\_ \
+//  _____     ___     ___\//\ \      __
+// /\ '__`\  / __`\  / __`\\ \ \   /'__`\
+// \ \ \_\ \/\ \_\ \/\ \_\ \\_\ \_/\  __/
+//  \ \ ,__/\ \____/\ \____//\____\ \____\
+//   \ \ \/  \/___/  \/___/ \/____/\/____/
+//    \ \_\
+//     \/_/
+//
+// Designed, built, and released under MIT license by @mdo. Learn more at
+// https://github.com/poole/poole.
+
+@import "../_sass/poole/variables";
+@import "../_sass/poole/base";
+@import "../_sass/poole/type";
+@import "../_sass/poole/syntax";
+@import "../_sass/poole/code";
+@import "../_sass/poole/layout";
+@import "../_sass/poole/masthead";
+@import "../_sass/poole/posts";
+@import "../_sass/poole/pagination";
+@import "../_sass/poole/message";
+
+/*
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * Container
+ * Reverse layout
+ * Themes
+ */
+
+@import "../_sass/hyde/hyde";
+
+/*
+ * Custom styles
+ */
+@import "../_sass/projects";
