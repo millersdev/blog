@@ -2,8 +2,14 @@
 <aside class="sidebar">
     <div class="container sidebar-sticky">
         <div class="sidebar-about">
-            <h1>Hi, I'm {{ site.title }}</h1>
+            <h1><span class="prefix">Hi, I'm </span>{{ site.title }}</h1>
             <p class="lead">I'm an {{ site.description }}</p>
+
+            <button class="mobile-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
 
         <nav class="sidebar-nav">
@@ -26,9 +32,10 @@
             <a class="sidebar-nav-item" href="https://twitter.com/reiniervdwindt" target="_blank">Twitter</a>
         </nav>
 
-        <small>
-            &copy;
-            <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> - All rights reserved.
-        </small>
+        <!--<small>-->
+            <!--&copy;-->
+            <!--<time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>-->
+            <!-- - All rights reserved.-->
+        <!--</small>-->
     </div>
 </aside>

@@ -13,5 +13,13 @@
     </main>
 </div>
 
+<script type="text/javascript">
+    $('.mobile-toggle').on('click', function(e) {
+        e.preventDefault();
+        $('.sidebar-nav').toggleClass('open');
+        $('.sidebar-about').find('.lead').toggle();
+    });
+</script>
+
 </body>
 </html>

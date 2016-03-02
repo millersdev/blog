@@ -41,6 +41,13 @@ html {
     }
 }
 
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
 /*
  * Sidebar
  *
@@ -49,8 +56,7 @@ html {
  */
 
 .sidebar {
-    text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
     color: rgba(255, 255, 255, .5);
     background-color: #202020;
 
@@ -76,6 +82,11 @@ html {
             font-family: "Ubuntu", sans-serif;
             font-size: 2.75rem;
             font-weight: 600;
+
+            @media (max-width: 48em) {
+                margin: 0;
+                font-size: 1.8rem;
+            }
         }
     }
 

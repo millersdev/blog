@@ -1,0 +1,60 @@
+.sidebar-sticky {
+    .mobile-toggle {
+        position: absolute;
+        top: 15px;
+        right: 0px;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    @media (min-width: 49em) {
+        .mobile-toggle {
+            display: none;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .mobile-toggle {
+            top: 25px;
+        }
+    }
+
+    @media (max-width: 49em) {
+        .lead {
+            display: none;
+        }
+
+        .prefix {
+            display: none;
+        }
+    }
+
+    .mobile-toggle span.icon-bar {
+        background-color: #fff;
+        display: block;
+        width: 22px;
+        height: 2px;
+        margin-bottom: 4px;
+        border-radius: 1px;
+        box-sizing: border-box;
+    }
+
+    .sidebar-nav {
+        display: none;
+
+        &.open {
+            display: block;
+        }
+    }
+
+    @media (min-width: 49em) {
+        .sidebar-nav {
+            display: block;
+        }
+    }
+}
