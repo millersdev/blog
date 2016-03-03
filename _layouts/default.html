@@ -14,10 +14,16 @@
 </div>
 
 <script type="text/javascript">
-    $('.mobile-toggle').on('click', function(e) {
+    jQuery('.mobile-toggle').on('click', function(e) {
         e.preventDefault();
         $('.sidebar-nav').toggleClass('open');
         $('.sidebar-about').find('.lead').toggle();
+    });
+    jQuery('span.s2').each(function(key, value) {
+        var result = value.innerHTML.match(/(http|ftp|https):\/\/[\w-]+(\.[\w-]+)+([\w.,@?^=%&amp;:\/~+#-]*[\w@?^=%&amp;\/~+#-])?/);
+        if (result) {
+            jQuery(this).html('"<a href="' + result[0] + '" target="_blank">' + result[0] + '</a>"');
+        }
     });
 </script>
 
