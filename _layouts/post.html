@@ -3,23 +3,46 @@ layout: default
 ---
 
 <article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
-  {{ content }}
+    <h1 class="post-title">{{ page.title }}</h1>
+    <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+    {{ content }}
 </article>
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function() {
+        this.page.url = "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}";
+        this.page.identifier = "{{ page.id }}";
+    };
+    (function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//reiniervanderwindt.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+{% endif %}
+
 
 {% if site.related_posts != empty %}
 <aside class="related">
-  <h3>Related posts</h3>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+    <h3>Related posts</h3>
+    <ul class="related-posts">
+        {% for post in site.related_posts limit:3 %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+                <small>
+                    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+                </small>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </aside>
 {% endif %}
