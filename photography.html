@@ -1,0 +1,12 @@
+---
+layout: page
+title: Photography
+---
+
+<div id="photos" class="justified-gallery">
+{% for photo in site.data.photos %}
+    <a href="/img/photos/{{ photo.images.large }}" rel="shadowbox[photos]" title="{{ photo.title }}">
+        <img src="/img/photos/{{ photo.images.small }}" height="333" width="500">
+    </a>
+{% endfor %}
+</div>

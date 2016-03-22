@@ -4,7 +4,7 @@
 {% include head.html %}
 
 <body class="theme-base-0d">
-    
+
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -33,6 +33,14 @@
         if (result) {
             jQuery(this).html('"<a href="' + result[0] + '" target="_blank">' + result[0] + '</a>"');
         }
+    });
+    jQuery('#photos').justifiedGallery({
+        'rowHeight': 300,
+        'margins': 10
+    });
+
+    Shadowbox.init({
+        overlayOpacity: 0.8
     });
 </script>
 
