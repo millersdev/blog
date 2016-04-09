@@ -98,5 +98,9 @@
     {
         "title": "TypeScript",
         "url": "http://www.typescriptlang.org"
+    },
+    {
+        "title": "Ruby",
+        "url": "https://www.ruby-lang.org/en/"
     }
 ]

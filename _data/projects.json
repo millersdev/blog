@@ -1,8 +1,26 @@
 [
     {
-        "title": "Kruiswoordhulp",
-        "description": "Alle hulp die je nodig hebt bij het kruiswoordpuzzelen.",
-        "image": "kruiswoordhulp.jpg",
-        "url": "https://www.kruiswoordhulp.nl"
+        "title": "Power Rangers API",
+        "description": "Just a Power Ranger API",
+        "image": "power-rangers.png",
+        "url": "https://github.com/reiniervdwindt/power-rangers-api"
+    },
+    {
+        "title": "Power Rangers Client (Python)",
+        "description": "A Python wrapper for Power Rangers API",
+        "image": "power-rangers.png",
+        "url": "https://github.com/reiniervdwindt/power-rangers-py"
+    },
+    {
+        "title": "Power Rangers Client (PHP)",
+        "description": "A PHP wrapper for Power Rangers API",
+        "image": "power-rangers.png",
+        "url": "https://github.com/reiniervdwindt/power-rangers-php"
+    },
+    {
+        "title": "Power Rangers Client (Ruby)",
+        "description": "A Ruby wrapper for Power Rangers API",
+        "image": "power-rangers.png",
+        "url": "https://github.com/reiniervdwindt/power-rangers-rb"
     }
 ]
